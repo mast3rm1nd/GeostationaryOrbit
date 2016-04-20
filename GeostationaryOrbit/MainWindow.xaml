@@ -1,0 +1,20 @@
+﻿<Window x:Class="GeostationaryOrbit.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeostationaryOrbit"
+        mc:Ignorable="d"
+        Title="Geostationizer" Height="245" Width="428" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="label" Content="Звёздные сутки:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="StarDayDuration_textBox" HorizontalAlignment="Left" Height="23" Margin="112.84,12.96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150.663" Text="86164" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label_Copy" Content="[с]" HorizontalAlignment="Left" Margin="268.503,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Results_textBox" HorizontalAlignment="Left" Height="95" Margin="10,98.88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" IsReadOnly="True" FontFamily="Consolas"/>
+        <Button x:Name="Calculate_button" Content="Посчитать" HorizontalAlignment="Left" Margin="10,71.92,0,0" VerticalAlignment="Top" Width="390" Click="Calculate_button_Click"/>
+        <Label x:Name="label_Copy1" Content="Масса тела:" HorizontalAlignment="Left" Margin="10,40.96,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="BodyMass_textBox" HorizontalAlignment="Left" Height="23" Margin="112.84,43.92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150.663" Text="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label_Copy2" Content="[масс Земли]" HorizontalAlignment="Left" Margin="268.503,40.96,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
